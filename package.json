@@ -8,10 +8,12 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "runtest": "cd android && gradlew clean && cd .. && react-native run-android"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native-stack": "^6.5.0",
     "react": "17.0.2",
     "react-native": "0.67.2",
     "react-native-safe-area-context": "^3.3.2",

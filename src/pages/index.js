@@ -1,4 +1,4 @@
-import Splash from './Splash';
+// import Splash from './Splash';
 import Mainmenu from './Mainmenu';
 // import Kelas1 from './Kelas1';
 // import Kelas2 from './Kelas2';
@@ -34,7 +34,7 @@ import Mainmenu from './Mainmenu';
 // import HurufZ from './Detail/HurufZ';
 // import Tentang from './Tentang';
 export {
-  Splash,
+  // Splash,
   Mainmenu,
   // Kelas1,
   // Kelas2,
