@@ -1,11 +1,13 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import Mainmenu from './src/pages/Mainmenu';
+// import Splash from './pages/Splash';
+import Router from './router';
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Mainmenu />
+      <Router />
     </NavigationContainer>
   );
 }
