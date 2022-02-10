@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   h1: {
+    textAlign: 'justify',
     fontSize: 28,
     color: 'white',
     // backgroundColor: 'purple',
