@@ -1,4 +1,4 @@
-package com.kamusips;
+package com.dianfauziah.kamusips;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;

@@ -9,7 +9,9 @@
     "test": "jest",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "runtest": "cd android && gradlew clean && cd .. && react-native run-android"
+    "runtest": "cd android && gradlew clean && cd .. && react-native run-android",
+    "apk": "cd android && gradlew clean && gradlew assembleRelease && cd .. & start .",
+    "aab": "cd android && gradlew clean && gradlew bundleRelease && cd .. & start ."
   },
   "dependencies": {
     "@react-native-community/clipboard": "^1.5.1",
