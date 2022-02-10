@@ -1,16 +1,13 @@
 import React, {Component} from 'react';
 import {
   StyleSheet,
-  Dimensions,
   View,
   Text,
   Image,
-  ScrollView,
   FlatList,
   ToastAndroid,
 } from 'react-native';
-import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
-import Pdf from 'react-native-pdf';
+import {TextInput, TouchableOpacity} from 'react-native';
 import Icon from '../../assets/img/dekor.png';
 import Copy from '../../assets/img/copy.png';
 import Clipboard from '@react-native-community/clipboard';
@@ -2298,9 +2295,8 @@ class BySearch extends Component {
   }
 
   render() {
-    const data = this.state.data.kata + ' ' + this.state.data.definisi;
     return (
-      <View style={{backgroundColor: '#18AEC7', flex: 1}}>
+      <View style={{backgroundColor: '#18AEC7', height: '100%'}}>
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.textheader}>
@@ -2331,7 +2327,7 @@ class BySearch extends Component {
                 <TouchableOpacity
                   style={{
                     // backgroundColor: '#18AEC7',
-                    flex: 1,
+                    // flex: 1,
                     borderTopEndRadius: 20,
                     borderBottomEndRadius: 20,
                     // borderWidth: 2,

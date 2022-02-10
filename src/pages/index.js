@@ -32,7 +32,7 @@ import HurufW from './Detail/HurufW';
 import HurufX from './Detail/HurufX';
 import HurufY from './Detail/HurufY';
 import HurufZ from './Detail/HurufZ';
-// import Tentang from './Tentang';
+import Tentang from './Tentang';
 export {
   Splash,
   Mainmenu,
@@ -68,5 +68,5 @@ export {
   HurufX,
   HurufY,
   HurufZ,
-  // Tentang,
+  Tentang,
 };

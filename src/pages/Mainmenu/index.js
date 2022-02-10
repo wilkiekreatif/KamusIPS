@@ -8,7 +8,7 @@ import Graduate from '../../assets/img/graduate.png';
 import Alphabet from '../../assets/img/alphabet.png';
 import MainBtn from './MainBtn';
 import SearchBtn from './SearchBtn';
-// import Tentang from './Tentang';
+import Tentang from './Tentang';
 
 const Mainmenu = ({navigation}) => {
   const handleGoTo = screen => {
@@ -61,6 +61,7 @@ const Mainmenu = ({navigation}) => {
         <View style={style.btnkonten1}>
           <SearchBtn onPress={() => handleGoTo('BySearch')} />
         </View>
+        <Tentang onPress={() => handleGoTo('Tentang')} />
       </View>
       {/* end Konten */}
     </View>
@@ -112,6 +113,7 @@ const style = StyleSheet.create({
     marginTop: -40,
     marginBottom: 47,
     justifyContent: 'center',
+    flex: 1,
   },
   mainbtn: {
     justifyContent: 'center',

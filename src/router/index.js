@@ -35,6 +35,7 @@ import {
   HurufX,
   HurufY,
   HurufZ,
+  Tentang,
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
@@ -210,6 +211,11 @@ const Router = () => {
       <Stack.Screen
         name="HurufZ"
         component={HurufZ}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Tentang"
+        component={Tentang}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
