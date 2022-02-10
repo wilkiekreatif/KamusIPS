@@ -1,0 +1,28 @@
+<ScrollView style={{padding: 5}}>
+          <MainBtn title="HURUF A" onPress={() => handleGoTo('DetailA')} />
+          <MainBtn title="HURUF B" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF C" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF D" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF E" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF F" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF G" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF H" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF I" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF J" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF K" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF L" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF M" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF N" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF O" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF P" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF Q" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF R" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF S" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF T" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF U" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF V" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF W" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF X" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF Y" onPress={() => alert('Masih Demo Lur')} />
+          <MainBtn title="HURUF Z" onPress={() => alert('Masih Demo Lur')} />
+        </ScrollView>

@@ -1,0 +1,18 @@
+<TextInput
+              style={styles.input}
+              onChangeText={text => this.setState({text: text})}
+              value={this.state.text}
+              placeholder="Pencarian Kata..."
+              placeholderTextColor={'gray'}
+              onKeyPress={() => this.search()}
+            />
+            <FlatList
+              data={this.state.data}
+              renderItem={({item}) => (
+                <View style={styles.flatview}>
+                  <Text style={styles.textview}>{item.kata}</Text>
+                  <Text style={styles.descview}> => {item.definisi}</Text>
+                </View>
+              )}
+              keyExtractor={item => item.kata}
+            />

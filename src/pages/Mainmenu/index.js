@@ -1,55 +1,71 @@
 import {Text, View, StyleSheet, Image} from 'react-native';
-import React, {Component} from 'react';
+import React from 'react';
 import Icon from '../../assets/img/dekor.png';
 import Dekor from '../../assets/img/dekor2.png';
-// import Girl from '../../assets/img/girl.png';
-// import Boy from '../../assets/img/boy.png';
-// import Graduate from '../../assets/img/graduate.png';
-// import Alphabet from '../../assets/img/alphabet.png';
-// import MainBtn from './MainBtn';
-// import SearchBtn from './SearchBtn';
+import Girl from '../../assets/img/girl.png';
+import Boy from '../../assets/img/boy.png';
+import Graduate from '../../assets/img/graduate.png';
+import Alphabet from '../../assets/img/alphabet.png';
+import MainBtn from './MainBtn';
+import SearchBtn from './SearchBtn';
 // import Tentang from './Tentang';
 
-class Mainmenu extends Component {
-  render() {
-    return (
-      <View style={style.latar}>
-        {/* Header & Dekorasi */}
+const Mainmenu = ({navigation}) => {
+  const handleGoTo = screen => {
+    navigation.navigate(screen);
+  };
+  return (
+    <View style={style.latar}>
+      {/* Header & Dekorasi */}
+      <View>
+        <View style={style.container}>
+          <View style={style.subcontainer}>
+            <Text style={style.h1}>KAMUS DIGITAL</Text>
+            <Text style={style.h5}>ILMU PENGETAHUAN SOSIAL</Text>
+          </View>
+          <View style={style.header}>
+            <Image source={Icon} style={style.dekor1} />
+          </View>
+        </View>
         <View>
-          <View style={style.container}>
-            <View style={style.subcontainer}>
-              <Text style={style.h1}>KAMUS DIGITAL</Text>
-              <Text style={style.h5}>ILMU PENGETAHUAN SOSIAL</Text>
-            </View>
-            <View style={style.header}>
-              <Image source={Icon} style={style.dekor1} />
-            </View>
-          </View>
-          <View>
-            <Image source={Dekor} style={style.dekor2} />
-          </View>
+          <Image source={Dekor} style={style.dekor2} />
         </View>
-        {/* END Header & Dekorasi */}
-        {/* Konten */}
-        <View style={style.content}>
-          <View style={style.btnkonten}>
-            {/* <MainBtn
-              title="Kelas 7"
-              image={Girl}
-              onPress={() => handleGoTo('Kelas1')}
-            />
-            <MainBtn
-              title="Kelas 8"
-              image={Boy}
-              onPress={() => handleGoTo('Kelas2')}
-            /> */}
-          </View>
-        </View>
-        {/* end Konten */}
       </View>
-    );
-  }
-}
+      {/* END Header & Dekorasi */}
+      {/* Konten */}
+      <View style={style.content}>
+        <View style={style.btnkonten}>
+          <MainBtn
+            title="Kelas 7"
+            image={Girl}
+            onPress={() => handleGoTo('Kelas1')}
+          />
+          <MainBtn
+            title="Kelas 8"
+            image={Boy}
+            onPress={() => handleGoTo('Kelas2')}
+          />
+        </View>
+        <View style={style.btnkonten}>
+          <MainBtn
+            title="Kelas 9"
+            image={Graduate}
+            onPress={() => handleGoTo('Kelas3')}
+          />
+          <MainBtn
+            title="ByAbjad"
+            image={Alphabet}
+            onPress={() => handleGoTo('ByAbjad')}
+          />
+        </View>
+        <View style={style.btnkonten1}>
+          <SearchBtn onPress={() => handleGoTo('BySearch')} />
+        </View>
+      </View>
+      {/* end Konten */}
+    </View>
+  );
+};
 
 export default Mainmenu;
 
@@ -88,7 +104,13 @@ const style = StyleSheet.create({
   btnkonten: {
     flexDirection: 'row',
     marginTop: -50,
-    marginBottom: 20,
+    marginBottom: 47,
+    justifyContent: 'center',
+  },
+  btnkonten1: {
+    flexDirection: 'row',
+    marginTop: -40,
+    marginBottom: 47,
     justifyContent: 'center',
   },
   mainbtn: {
