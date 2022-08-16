@@ -28,7 +28,7 @@ class Tentang extends Component {
               }}
             />
             <View>
-              <Text style={styles.h2}>Nama : Dian Fauziah, S.Pd</Text>
+              <Text style={styles.h2}>Nama : Dian Fauziah, S.Pd., M.Pd</Text>
               <Text style={styles.h2}>Alamat: Surabaya, Indonesia</Text>
               <Text style={styles.h2}>Email: dian.20007@mhs.unesa.ac.id</Text>
             </View>

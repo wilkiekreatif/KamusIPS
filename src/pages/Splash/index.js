@@ -26,7 +26,7 @@ const Splash = ({navigation}) => {
         /> */}
       </View>
       <View style={style.bottom}>
-        <Text style={style.h2}>Dian Fauziah, S.Pd</Text>
+        <Text style={style.h2}>Dian Fauziah, S.Pd.,M.Pd</Text>
         <Text style={style.h5}>Version 1.0</Text>
       </View>
     </View>

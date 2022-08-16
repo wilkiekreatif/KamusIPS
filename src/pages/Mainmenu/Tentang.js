@@ -20,7 +20,7 @@ const SearchBtn = ({onPress}) => {
             fontWeight: 'bold',
           }}
         >
-          Dian Fauziah, S.Pd
+          Dian Fauziah, S.Pd.,M.Pd
         </Text>
       </View>
     </TouchableOpacity>
